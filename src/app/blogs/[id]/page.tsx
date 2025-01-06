@@ -4,7 +4,7 @@ import { convertToSentence } from "@/utils/helpers";
 
 import './blogPage.css';
 
-export default async function BlogPage({ params }: { params: { id: String } }) {
+export default async function BlogPage({ params }: { params: { id: string } }) {
     const data = await fetch("https://jsonplaceholder.typicode.com/posts/" + params.id);
     const blog: BlogPost = await data.json();
 
