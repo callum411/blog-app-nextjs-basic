@@ -4,8 +4,14 @@ import { convertToSentence } from "@/utils/helpers";
 
 import './blogPage.css';
 
-export default async function BlogPage({ params }: { params: { id: string } }) {
-    const data = await fetch("https://jsonplaceholder.typicode.com/posts/" + params.id);
+interface pageProps {
+
+}
+
+export default async function BlogPage({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+
+    const data = await fetch("https://jsonplaceholder.typicode.com/posts/" + id);
     const blog: BlogPost = await data.json();
 
     if (!blog) return <>
