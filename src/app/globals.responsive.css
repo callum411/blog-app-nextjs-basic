@@ -1,0 +1,3 @@
+@media (max-width: 1200px) {
+    .inner          {width:100%;min-width: unset;}
+}

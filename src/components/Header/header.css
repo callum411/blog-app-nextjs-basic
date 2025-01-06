@@ -1,0 +1,11 @@
+header                  {width:100%;padding: 15px 0;border-bottom: 1px solid #efefef;}
+header .inner           {display:flex;align-items: center;justify-content: space-between;}
+
+header nav ul           {display:flex;gap:30px;list-style:none;}
+header nav ul li a.active   {font-weight: bold;}
+
+
+
+@media (max-width: 1200px) {
+    header          {padding: 15px;}
+}

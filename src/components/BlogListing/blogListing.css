@@ -1,0 +1,12 @@
+.blog-listing               {margin-top:30px;margin-bottom:30px;display:flex;flex-direction: column;gap:30px;}
+.blog-listing.stacked       {flex-direction: row;}
+
+
+@media (max-width: 1200px) {
+    .blog-listing          {padding: 0 15px;}
+}
+
+@media (max-width: 900px) {
+    .blog-listing                   {gap:15px !important;}
+    .blog-listing.stacked           {flex-direction: column !important;}
+}
