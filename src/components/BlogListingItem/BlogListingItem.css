@@ -12,3 +12,8 @@
 
     .blog-listing.stacked .blog-listing-item:nth-child(n+1):not(:first-child)            {border:0 !important;padding-left:0 !important;}
 }
+
+@media (max-width: 768px) {
+    .blog-listing-item          {flex-direction: column;}
+    .blog-listing .blog-listing-item img            {width:100%;height:auto;}
+}
